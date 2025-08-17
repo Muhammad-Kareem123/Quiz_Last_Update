@@ -1,17 +1,24 @@
-﻿namespace Exam_Api_v2.Models
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Exam_Api_v2.Models
 {
     public class Exam
     {
-        public int Id { get; set; }
-        public string? Title { get; set; }
-        public string? Description { get; set; }
-        
-        public DateTime? EndAt { get; set; }
-        public bool Subimtted { get; set; } = false;
-        public string? Grade { get; set; }
-        public String Subject { get; set; }
+        [Key]
+        public int Exam_ID { get; set; }
+        [Required(ErrorMessage = "Title is Required")]
+        public string Title { get; set; }
+        [Required(ErrorMessage = "Category is Required")]
+        public string Category { get; set; }
+        public string? Exam_Description { get; set; }
+        public DateTime? EndDate { get; set; }
+        [Required(ErrorMessage = "Grade is required")]
+        public int Grade { get; set; }
+        [ForeignKey("Account_ID ")]
+        public int Account_ID { get; set; }
+        public Account Teacher { get; set; }
 
-        public ICollection<Question> Questions { get; set; }
+        public ICollection<Exam_QuestionBank> Exam_QuestionBanks { get; set; }
     }
-
 }

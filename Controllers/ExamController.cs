@@ -1,7 +1,9 @@
-﻿using Exam_Api_v2.DTOs;
-using Exam_Api_v2.Repo.Exam;
+﻿using Exam_Api_v2.Converter;
+using Exam_Api_v2.Data;
+using Exam_Api_v2.DTO;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Exam_Api_v2.Controllers
 {
@@ -9,67 +11,53 @@ namespace Exam_Api_v2.Controllers
     [ApiController]
     public class ExamController : ControllerBase
     {
-        private readonly IExamRepository _examRepo;
-
-        public ExamController(IExamRepository examRepo)
+        private readonly AppDB_Context _Context;
+        public ExamController(AppDB_Context context)
         {
-            _examRepo = examRepo;
+            _Context = context;
         }
-
-        [HttpPost("Create")]
-        public async Task<IActionResult> CreateExam([FromBody] CreateExamDto dto)
+        [HttpGet("{id}")]
+        public async Task<ActionResult<ExamReadDto>> GetExam(int id)
         {
-            var result = await _examRepo.CreateExamAsync(dto);
-            return Ok(result);
+            var exam = await _Context.exams
+                .Include(e => e.Teacher) // تحميل بيانات المعلم
+                .FirstOrDefaultAsync(e => e.Exam_ID == id);
+            if (exam == null)
+                return NotFound();
+            return exam.ToReadDTO();
         }
-
-        [HttpGet("Exams")]
-        public async Task<IActionResult> GetExams()
+        [HttpPost]
+        public async Task<ActionResult<ExamReadDto>> CreateExam(ExamCreateDto examCreateDTO)
         {
-            var exams = await _examRepo.GetAllExamsAsync();
-            return Ok(exams);
+            var exam = examCreateDTO.ToEntity();
+
+            _Context.exams.Add(exam);
+            await _Context.SaveChangesAsync();
+            return CreatedAtAction(nameof(GetExam),
+                new { id = exam.Exam_ID },
+                exam.ToReadDTO());
         }
-
-
-        [HttpPost("submit")]
-        public async Task<IActionResult> SubmitExam([FromBody] List<StudentAnswerDTO> studentAnswers)
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateExam(int id, ExamUpdateDto examUpdateDTO)
         {
-            var score = await _examRepo.CalculateScoreAsync(studentAnswers);
-            return Ok(new { Score = score });
-        }
+            var exam = await _Context.exams.FindAsync(id);
 
-        [HttpPut("Update/{id}")]
-        public async Task<IActionResult> Update(int id, QuizUpdateDto dto)
-        {
-            var updated = await _examRepo.UpdateAsync(id, dto);
-            if (updated == null) return NotFound();
-
+            if (exam == null)
+                return NotFound();
+            exam.UpdateFromDTO(examUpdateDTO);
+            await _Context.SaveChangesAsync();
             return NoContent();
         }
-
-        [HttpDelete("delete/{id}")]
-        public async Task<IActionResult> Delete(int id)
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteExam(int id)
         {
-            var deleted = await _examRepo.DeleteAsync(id);
-            if (!deleted) return NotFound();
+            var exam = await _Context.exams.FindAsync(id);
 
+            if (exam == null)
+                return NotFound();
+            _Context.exams.Remove(exam);
+            await _Context.SaveChangesAsync();
             return NoContent();
-        }
-        [HttpGet("Exam/{id}")]
-        public async Task<ActionResult<ExamResponseDto>> GetById(int id)
-        {
-            var quiz = await _examRepo.GetByIdAsync(id);
-            if (quiz == null) return NotFound();
-            return Ok(quiz);
-        }
-        [HttpPost("submit-exam/{examId}")]
-        public async Task<IActionResult> SubmitExam(int examId, [FromBody] List<StudentAnswerDTO> studentAnswers)
-        {
-            var result = await _examRepo.SubmitExamAsync(examId, studentAnswers);
-            if (result == null) return NotFound();
-            return Ok(result);
         }
     }
 }
-
-

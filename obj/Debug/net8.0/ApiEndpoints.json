@@ -1,40 +1,34 @@
 [
   {
-    "ContainingType": "Exam_Api_v2.Controllers.ExamController",
-    "Method": "CreateExam",
-    "RelativePath": "api/Exam/Create",
+    "ContainingType": "Exam_Api_v2.Controllers.AccountController",
+    "Method": "CreateAccount",
+    "RelativePath": "api/Account",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "dto",
-        "Type": "Exam_Api_v2.DTOs.CreateExamDto",
+        "Name": "accountCreateDTO",
+        "Type": "Exam_Api_v2.DTO.AccountCreateDTO",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Exam_Api_v2.Controllers.ExamController",
-    "Method": "Delete",
-    "RelativePath": "api/Exam/delete/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
+    "ReturnTypes": [
       {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
+        "Type": "Exam_Api_v2.DTO.AccountReadDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
       }
-    ],
-    "ReturnTypes": []
+    ]
   },
   {
-    "ContainingType": "Exam_Api_v2.Controllers.ExamController",
-    "Method": "GetById",
-    "RelativePath": "api/Exam/Exam/{id}",
+    "ContainingType": "Exam_Api_v2.Controllers.AccountController",
+    "Method": "GetAccount",
+    "RelativePath": "api/Account/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -47,7 +41,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Exam_Api_v2.DTOs.ExamResponseDto",
+        "Type": "Exam_Api_v2.DTO.AccountReadDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -58,56 +52,9 @@
     ]
   },
   {
-    "ContainingType": "Exam_Api_v2.Controllers.ExamController",
-    "Method": "GetExams",
-    "RelativePath": "api/Exam/Exams",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Exam_Api_v2.Controllers.ExamController",
-    "Method": "SubmitExam",
-    "RelativePath": "api/Exam/submit",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "studentAnswers",
-        "Type": "System.Collections.Generic.List\u00601[[Exam_Api_v2.DTOs.StudentAnswerDTO, Exam_Api_v2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Exam_Api_v2.Controllers.ExamController",
-    "Method": "SubmitExam",
-    "RelativePath": "api/Exam/submit-exam/{examId}",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "examId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "studentAnswers",
-        "Type": "System.Collections.Generic.List\u00601[[Exam_Api_v2.DTOs.StudentAnswerDTO, Exam_Api_v2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Exam_Api_v2.Controllers.ExamController",
-    "Method": "Update",
-    "RelativePath": "api/Exam/Update/{id}",
+    "ContainingType": "Exam_Api_v2.Controllers.AccountController",
+    "Method": "UpdateAccount",
+    "RelativePath": "api/Account/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -118,17 +65,17 @@
         "IsRequired": true
       },
       {
-        "Name": "dto",
-        "Type": "Exam_Api_v2.DTOs.QuizUpdateDto",
+        "Name": "accountUpdateDTO",
+        "Type": "Exam_Api_v2.DTO.AccountUpdateDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Exam_Api_v2.Controllers.QuestionController",
-    "Method": "DeleteQuestion",
-    "RelativePath": "api/Question/DElete/{id}",
+    "ContainingType": "Exam_Api_v2.Controllers.AccountController",
+    "Method": "DeleteAccount",
+    "RelativePath": "api/Account/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -142,61 +89,61 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Exam_Api_v2.Controllers.QuestionController",
-    "Method": "EditQuestion",
-    "RelativePath": "api/Question/exam/{examId}/question/Edit/{questionId}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "examId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "questionId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "dto",
-        "Type": "Exam_Api_v2.DTOs.CreateQuestionDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Exam_Api_v2.Controllers.StudentController",
-    "Method": "GetAllStudents",
-    "RelativePath": "api/Student",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Exam_Api_v2.Controllers.StudentController",
-    "Method": "CreateStudent",
-    "RelativePath": "api/Student",
+    "ContainingType": "Exam_Api_v2.Controllers.ExamController",
+    "Method": "CreateExam",
+    "RelativePath": "api/Exam",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "dto",
-        "Type": "Exam_Api_v2.DTOs.CreateStudentDto",
+        "Name": "examCreateDTO",
+        "Type": "Exam_Api_v2.DTO.ExamCreateDto",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "Exam_Api_v2.DTO.ExamReadDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
-    "ContainingType": "Exam_Api_v2.Controllers.StudentController",
-    "Method": "GetStudentById",
-    "RelativePath": "api/Student/{id}",
+    "ContainingType": "Exam_Api_v2.Controllers.Exam_QuestionBankController",
+    "Method": "CreateExamQuestionBank",
+    "RelativePath": "api/Exam_QuestionBank",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "examQuestionBankCreateDTO",
+        "Type": "Exam_Api_v2.DTO.Exam_QuestionBankCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Exam_Api_v2.DTO.Exam_QuestionBankReadDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.Exam_QuestionBankController",
+    "Method": "GetExamQuestionBank",
+    "RelativePath": "api/Exam_QuestionBank/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -207,12 +154,22 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "Exam_Api_v2.DTO.Exam_QuestionBankReadDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
-    "ContainingType": "Exam_Api_v2.Controllers.StudentController",
-    "Method": "UpdateStudent",
-    "RelativePath": "api/Student/{id}",
+    "ContainingType": "Exam_Api_v2.Controllers.Exam_QuestionBankController",
+    "Method": "UpdateExamQuestionBank",
+    "RelativePath": "api/Exam_QuestionBank/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -223,17 +180,921 @@
         "IsRequired": true
       },
       {
-        "Name": "dto",
-        "Type": "Exam_Api_v2.DTOs.StudentUpdateDto",
+        "Name": "examQuestionBankUpdateDTO",
+        "Type": "Exam_Api_v2.DTO.Exam_QuestionBankUpdateDTO",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Exam_Api_v2.Controllers.StudentController",
-    "Method": "DeleteStudent",
-    "RelativePath": "api/Student/{id}",
+    "ContainingType": "Exam_Api_v2.Controllers.Exam_QuestionBankController",
+    "Method": "DeleteExamQuestionBank",
+    "RelativePath": "api/Exam_QuestionBank/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.ExamController",
+    "Method": "GetExam",
+    "RelativePath": "api/Exam/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Exam_Api_v2.DTO.ExamReadDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.ExamController",
+    "Method": "UpdateExam",
+    "RelativePath": "api/Exam/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "examUpdateDTO",
+        "Type": "Exam_Api_v2.DTO.ExamUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.ExamController",
+    "Method": "DeleteExam",
+    "RelativePath": "api/Exam/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.Fill_In_GapsController",
+    "Method": "CreateFillInGap",
+    "RelativePath": "api/Fill_In_Gaps",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fillInGapsCreateDTO",
+        "Type": "Exam_Api_v2.DTO.Fill_In_GapsCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Exam_Api_v2.DTO.Fill_In_GapsReadDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.Fill_In_GapsController",
+    "Method": "GetFillInGap",
+    "RelativePath": "api/Fill_In_Gaps/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Exam_Api_v2.DTO.Fill_In_GapsReadDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.Fill_In_GapsController",
+    "Method": "UpdateFillInGap",
+    "RelativePath": "api/Fill_In_Gaps/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "fillInGapsUpdateDTO",
+        "Type": "Exam_Api_v2.DTO.Fill_In_GapsUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.Fill_In_GapsController",
+    "Method": "DeleteFillInGap",
+    "RelativePath": "api/Fill_In_Gaps/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.LoginController",
+    "Method": "CreateLogin",
+    "RelativePath": "api/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginCreateDTO",
+        "Type": "Exam_Api_v2.DTO.LoginCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Exam_Api_v2.DTO.LoginReadDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.LoginController",
+    "Method": "GetLogin",
+    "RelativePath": "api/Login/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Exam_Api_v2.DTO.LoginReadDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.LoginController",
+    "Method": "UpdateLogin",
+    "RelativePath": "api/Login/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "loginUpdateDTO",
+        "Type": "Exam_Api_v2.DTO.LoginUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.LoginController",
+    "Method": "DeleteLogin",
+    "RelativePath": "api/Login/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.MCQ_OptionsController",
+    "Method": "CreateMCQOption",
+    "RelativePath": "api/MCQ_Options",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mcqOptionCreateDTO",
+        "Type": "Exam_Api_v2.DTO.MCQ_OptionCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Exam_Api_v2.DTO.MCQ_OptionReadDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.MCQ_OptionsController",
+    "Method": "GetMCQOption",
+    "RelativePath": "api/MCQ_Options/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Exam_Api_v2.DTO.MCQ_OptionReadDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.MCQ_OptionsController",
+    "Method": "UpdateMCQOption",
+    "RelativePath": "api/MCQ_Options/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "mcqOptionUpdateDTO",
+        "Type": "Exam_Api_v2.DTO.MCQ_OptionsUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.MCQ_OptionsController",
+    "Method": "DeleteMCQOption",
+    "RelativePath": "api/MCQ_Options/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.QuestionBankController",
+    "Method": "CreateQuestionBank",
+    "RelativePath": "api/QuestionBank",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "questionBankCreateDTO",
+        "Type": "Exam_Api_v2.DTO.Question_BankCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Exam_Api_v2.DTO.Question_BankReadDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.QuestionBankController",
+    "Method": "GetQuestionBank",
+    "RelativePath": "api/QuestionBank/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Exam_Api_v2.DTO.Question_BankReadDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.QuestionBankController",
+    "Method": "UpdateQuestionBank",
+    "RelativePath": "api/QuestionBank/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "questionBankUpdateDTO",
+        "Type": "Exam_Api_v2.DTO.Question_BankUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.QuestionBankController",
+    "Method": "DeleteQuestionBank",
+    "RelativePath": "api/QuestionBank/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.QuestionTypeController",
+    "Method": "CreateQuestionType",
+    "RelativePath": "api/QuestionType",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "questionTypeCreateDTO",
+        "Type": "Exam_Api_v2.DTO.Question_TypeCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Exam_Api_v2.DTO.Question_TypeReadDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.QuestionTypeController",
+    "Method": "GetQuestionType",
+    "RelativePath": "api/QuestionType/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Exam_Api_v2.DTO.Question_TypeReadDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.QuestionTypeController",
+    "Method": "UpdateQuestionType",
+    "RelativePath": "api/QuestionType/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "questionTypeUpdateDTO",
+        "Type": "Exam_Api_v2.DTO.Question_TypeUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.QuestionTypeController",
+    "Method": "DeleteQuestionType",
+    "RelativePath": "api/QuestionType/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.RolesController",
+    "Method": "CreateRole",
+    "RelativePath": "api/Roles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "roleCreateDTO",
+        "Type": "Exam_Api_v2.DTO.RolesCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Exam_Api_v2.DTO.RolesReadDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.RolesController",
+    "Method": "GetRole",
+    "RelativePath": "api/Roles/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Exam_Api_v2.DTO.RolesReadDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.RolesController",
+    "Method": "UpdateRole",
+    "RelativePath": "api/Roles/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "roleUpdateDTO",
+        "Type": "Exam_Api_v2.DTO.RolesUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.RolesController",
+    "Method": "DeleteRole",
+    "RelativePath": "api/Roles/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.StatusController",
+    "Method": "GetAllStatuses",
+    "RelativePath": "api/Status",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Exam_Api_v2.DTO.StatusReadDTO, Exam_Api_v2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.StatusController",
+    "Method": "CreateStatus",
+    "RelativePath": "api/Status",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "statusCreateDTO",
+        "Type": "Exam_Api_v2.DTO.StatusCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Exam_Api_v2.DTO.StatusReadDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.StatusController",
+    "Method": "GetStatus",
+    "RelativePath": "api/Status/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Exam_Api_v2.DTO.StatusReadDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.StatusController",
+    "Method": "UpdateStatus",
+    "RelativePath": "api/Status/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "statusUpdateDTO",
+        "Type": "Exam_Api_v2.DTO.StatusUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.StatusController",
+    "Method": "DeleteStatus",
+    "RelativePath": "api/Status/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.Student_ExamQBController",
+    "Method": "CreateStudentExamQB",
+    "RelativePath": "api/Student_ExamQB",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentExamQBCreateDTO",
+        "Type": "Exam_Api_v2.DTO.StudentExamQBCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Exam_Api_v2.DTO.StudentExamQBReadDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.Student_ExamQBController",
+    "Method": "GetStudentExamQB",
+    "RelativePath": "api/Student_ExamQB/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Exam_Api_v2.DTO.StudentExamQBReadDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.Student_ExamQBController",
+    "Method": "UpdateStudentExamQB",
+    "RelativePath": "api/Student_ExamQB/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "studentExamQBUpdateDTO",
+        "Type": "Exam_Api_v2.DTO.StudentExamQBUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.Student_ExamQBController",
+    "Method": "DeleteStudentExamQB",
+    "RelativePath": "api/Student_ExamQB/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.TrueOrFalseController",
+    "Method": "GetAllQuestions",
+    "RelativePath": "api/TrueOrFalse",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Exam_Api_v2.DTO.TrueOrFalseReadDTO, Exam_Api_v2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.TrueOrFalseController",
+    "Method": "CreateQuestion",
+    "RelativePath": "api/TrueOrFalse",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createDTO",
+        "Type": "Exam_Api_v2.DTO.TrueOrFalseCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Exam_Api_v2.DTO.TrueOrFalseReadDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.TrueOrFalseController",
+    "Method": "GetQuestion",
+    "RelativePath": "api/TrueOrFalse/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Exam_Api_v2.DTO.TrueOrFalseReadDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.TrueOrFalseController",
+    "Method": "UpdateQuestion",
+    "RelativePath": "api/TrueOrFalse/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateDTO",
+        "Type": "Exam_Api_v2.DTO.TrueOrFalseUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Exam_Api_v2.Controllers.TrueOrFalseController",
+    "Method": "DeleteQuestion",
+    "RelativePath": "api/TrueOrFalse/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

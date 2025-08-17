@@ -5,135 +5,10 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Exam/Create": {
-      "post": {
-        "tags": [
-          "Exam"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CreateExamDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CreateExamDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/CreateExamDto"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
-    "/api/Exam/Exams": {
+    "/api/Account/{id}": {
       "get": {
         "tags": [
-          "Exam"
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
-    "/api/Exam/submit": {
-      "post": {
-        "tags": [
-          "Exam"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "array",
-                "items": {
-                  "$ref": "#/components/schemas/StudentAnswerDTO"
-                }
-              }
-            },
-            "text/json": {
-              "schema": {
-                "type": "array",
-                "items": {
-                  "$ref": "#/components/schemas/StudentAnswerDTO"
-                }
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "type": "array",
-                "items": {
-                  "$ref": "#/components/schemas/StudentAnswerDTO"
-                }
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
-    "/api/Exam/Update/{id}": {
-      "put": {
-        "tags": [
-          "Exam"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/QuizUpdateDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/QuizUpdateDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/QuizUpdateDto"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
-    "/api/Exam/delete/{id}": {
-      "delete": {
-        "tags": [
-          "Exam"
+          "Account"
         ],
         "parameters": [
           {
@@ -148,44 +23,130 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
-    "/api/Exam/Exam/{id}": {
-      "get": {
-        "tags": [
-          "Exam"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/ExamResponseDto"
+                  "$ref": "#/components/schemas/AccountReadDto"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ExamResponseDto"
+                  "$ref": "#/components/schemas/AccountReadDto"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ExamResponseDto"
+                  "$ref": "#/components/schemas/AccountReadDto"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Account"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AccountUpdateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AccountUpdateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AccountUpdateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Account"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Account": {
+      "post": {
+        "tags": [
+          "Account"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AccountCreateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AccountCreateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AccountCreateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AccountReadDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AccountReadDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AccountReadDto"
                 }
               }
             }
@@ -193,14 +154,52 @@
         }
       }
     },
-    "/api/Exam/submit-exam/{examId}": {
-      "post": {
+    "/api/Exam/{id}": {
+      "get": {
         "tags": [
           "Exam"
         ],
         "parameters": [
           {
-            "name": "examId",
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExamReadDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExamReadDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExamReadDto"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Exam"
+        ],
+        "parameters": [
+          {
+            "name": "id",
             "in": "path",
             "required": true,
             "schema": {
@@ -213,41 +212,30 @@
           "content": {
             "application/json": {
               "schema": {
-                "type": "array",
-                "items": {
-                  "$ref": "#/components/schemas/StudentAnswerDTO"
-                }
+                "$ref": "#/components/schemas/ExamUpdateDto"
               }
             },
             "text/json": {
               "schema": {
-                "type": "array",
-                "items": {
-                  "$ref": "#/components/schemas/StudentAnswerDTO"
-                }
+                "$ref": "#/components/schemas/ExamUpdateDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "type": "array",
-                "items": {
-                  "$ref": "#/components/schemas/StudentAnswerDTO"
-                }
+                "$ref": "#/components/schemas/ExamUpdateDto"
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
-      }
-    },
-    "/api/Question/DElete/{id}": {
+      },
       "delete": {
         "tags": [
-          "Question"
+          "Exam"
         ],
         "parameters": [
           {
@@ -262,28 +250,105 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
     },
-    "/api/Question/exam/{examId}/question/Edit/{questionId}": {
-      "put": {
+    "/api/Exam": {
+      "post": {
         "tags": [
-          "Question"
+          "Exam"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExamCreateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExamCreateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExamCreateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExamReadDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExamReadDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExamReadDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Exam_QuestionBank/{id}": {
+      "get": {
+        "tags": [
+          "Exam_QuestionBank"
         ],
         "parameters": [
           {
-            "name": "examId",
+            "name": "id",
             "in": "path",
             "required": true,
             "schema": {
               "type": "integer",
               "format": "int32"
             }
-          },
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Exam_QuestionBankReadDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Exam_QuestionBankReadDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Exam_QuestionBankReadDTO"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Exam_QuestionBank"
+        ],
+        "parameters": [
           {
-            "name": "questionId",
+            "name": "id",
             "in": "path",
             "required": true,
             "schema": {
@@ -296,73 +361,1180 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateQuestionDto"
+                "$ref": "#/components/schemas/Exam_QuestionBankUpdateDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateQuestionDto"
+                "$ref": "#/components/schemas/Exam_QuestionBankUpdateDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateQuestionDto"
+                "$ref": "#/components/schemas/Exam_QuestionBankUpdateDTO"
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Exam_QuestionBank"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
     },
-    "/api/Student": {
+    "/api/Exam_QuestionBank": {
+      "post": {
+        "tags": [
+          "Exam_QuestionBank"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Exam_QuestionBankCreateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Exam_QuestionBankCreateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Exam_QuestionBankCreateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Exam_QuestionBankReadDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Exam_QuestionBankReadDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Exam_QuestionBankReadDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Fill_In_Gaps/{id}": {
       "get": {
         "tags": [
-          "Student"
+          "Fill_In_Gaps"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Fill_In_GapsReadDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Fill_In_GapsReadDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Fill_In_GapsReadDto"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Fill_In_Gaps"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Fill_In_GapsUpdateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Fill_In_GapsUpdateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Fill_In_GapsUpdateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Fill_In_Gaps"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Fill_In_Gaps": {
+      "post": {
+        "tags": [
+          "Fill_In_Gaps"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Fill_In_GapsCreateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Fill_In_GapsCreateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Fill_In_GapsCreateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Fill_In_GapsReadDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Fill_In_GapsReadDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Fill_In_GapsReadDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Login/{id}": {
+      "get": {
+        "tags": [
+          "Login"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoginReadDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoginReadDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoginReadDTO"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Login"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginUpdateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginUpdateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginUpdateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Login"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Login": {
+      "post": {
+        "tags": [
+          "Login"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginCreateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginCreateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginCreateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoginReadDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoginReadDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoginReadDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/MCQ_Options/{id}": {
+      "get": {
+        "tags": [
+          "MCQ_Options"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MCQ_OptionReadDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MCQ_OptionReadDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MCQ_OptionReadDto"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "MCQ_Options"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MCQ_OptionsUpdateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MCQ_OptionsUpdateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MCQ_OptionsUpdateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "MCQ_Options"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/MCQ_Options": {
+      "post": {
+        "tags": [
+          "MCQ_Options"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MCQ_OptionCreateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MCQ_OptionCreateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MCQ_OptionCreateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MCQ_OptionReadDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MCQ_OptionReadDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MCQ_OptionReadDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/QuestionBank/{id}": {
+      "get": {
+        "tags": [
+          "QuestionBank"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Question_BankReadDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Question_BankReadDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Question_BankReadDTO"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "QuestionBank"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Question_BankUpdateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Question_BankUpdateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Question_BankUpdateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "QuestionBank"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/QuestionBank": {
+      "post": {
+        "tags": [
+          "QuestionBank"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Question_BankCreateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Question_BankCreateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Question_BankCreateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Question_BankReadDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Question_BankReadDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Question_BankReadDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/QuestionType/{id}": {
+      "get": {
+        "tags": [
+          "QuestionType"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Question_TypeReadDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Question_TypeReadDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Question_TypeReadDto"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "QuestionType"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Question_TypeUpdateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Question_TypeUpdateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Question_TypeUpdateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "QuestionType"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/QuestionType": {
+      "post": {
+        "tags": [
+          "QuestionType"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Question_TypeCreateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Question_TypeCreateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Question_TypeCreateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Question_TypeReadDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Question_TypeReadDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Question_TypeReadDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Roles/{id}": {
+      "get": {
+        "tags": [
+          "Roles"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/RolesReadDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RolesReadDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RolesReadDTO"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Roles"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RolesUpdateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RolesUpdateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RolesUpdateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Roles"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Roles": {
+      "post": {
+        "tags": [
+          "Roles"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RolesCreateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RolesCreateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RolesCreateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/RolesReadDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RolesReadDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RolesReadDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Status/{id}": {
+      "get": {
+        "tags": [
+          "Status"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/StatusReadDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StatusReadDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StatusReadDTO"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Status"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StatusUpdateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StatusUpdateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/StatusUpdateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Status"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Status": {
+      "get": {
+        "tags": [
+          "Status"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/StatusReadDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/StatusReadDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/StatusReadDTO"
+                  }
+                }
+              }
+            }
           }
         }
       },
       "post": {
         "tags": [
-          "Student"
+          "Status"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateStudentDto"
+                "$ref": "#/components/schemas/StatusCreateDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateStudentDto"
+                "$ref": "#/components/schemas/StatusCreateDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateStudentDto"
+                "$ref": "#/components/schemas/StatusCreateDTO"
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/StatusReadDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StatusReadDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StatusReadDTO"
+                }
+              }
+            }
           }
         }
       }
     },
-    "/api/Student/{id}": {
+    "/api/Student_ExamQB/{id}": {
       "get": {
         "tags": [
-          "Student"
+          "Student_ExamQB"
         ],
         "parameters": [
           {
@@ -377,13 +1549,30 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/StudentExamQBReadDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StudentExamQBReadDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StudentExamQBReadDTO"
+                }
+              }
+            }
           }
         }
       },
       "put": {
         "tags": [
-          "Student"
+          "Student_ExamQB"
         ],
         "parameters": [
           {
@@ -400,30 +1589,30 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/StudentUpdateDto"
+                "$ref": "#/components/schemas/StudentExamQBUpdateDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/StudentUpdateDto"
+                "$ref": "#/components/schemas/StudentExamQBUpdateDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/StudentUpdateDto"
+                "$ref": "#/components/schemas/StudentExamQBUpdateDTO"
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       },
       "delete": {
         "tags": [
-          "Student"
+          "Student_ExamQB"
         ],
         "parameters": [
           {
@@ -438,7 +1627,240 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Student_ExamQB": {
+      "post": {
+        "tags": [
+          "Student_ExamQB"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StudentExamQBCreateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StudentExamQBCreateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/StudentExamQBCreateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/StudentExamQBReadDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StudentExamQBReadDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StudentExamQBReadDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TrueOrFalse": {
+      "get": {
+        "tags": [
+          "TrueOrFalse"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TrueOrFalseReadDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TrueOrFalseReadDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TrueOrFalseReadDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TrueOrFalse"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TrueOrFalseCreateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TrueOrFalseCreateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TrueOrFalseCreateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TrueOrFalseReadDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TrueOrFalseReadDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TrueOrFalseReadDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TrueOrFalse/{id}": {
+      "get": {
+        "tags": [
+          "TrueOrFalse"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TrueOrFalseReadDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TrueOrFalseReadDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TrueOrFalseReadDTO"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TrueOrFalse"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TrueOrFalseUpdateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TrueOrFalseUpdateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TrueOrFalseUpdateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TrueOrFalse"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
@@ -446,61 +1868,79 @@
   },
   "components": {
     "schemas": {
-      "CreateExamDto": {
+      "AccountCreateDTO": {
+        "required": [
+          "email",
+          "fullNameAr",
+          "fullNameEn",
+          "nationalId",
+          "password",
+          "resetToken",
+          "status_ID"
+        ],
         "type": "object",
         "properties": {
-          "title": {
+          "nationalId": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "password": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "email": {
+            "minLength": 1,
             "type": "string",
+            "format": "email"
+          },
+          "phone": {
+            "type": "string",
+            "format": "tel",
             "nullable": true
           },
-          "description": {
-            "type": "string",
-            "nullable": true
+          "fullNameEn": {
+            "minLength": 1,
+            "type": "string"
           },
-          "endAt": {
+          "fullNameAr": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "resetToken": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "resetTokenExpiry": {
             "type": "string",
             "format": "date-time",
             "nullable": true
           },
-          "grade": {
+          "created_At": {
             "type": "string",
-            "nullable": true
+            "format": "date-time"
           },
-          "subimtted": {
+          "isActive": {
             "type": "boolean"
           },
-          "subject": {
-            "type": "string",
-            "nullable": true
+          "role_ID": {
+            "type": "integer",
+            "format": "int32"
           },
-          "questions": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/CreateQuestionDto"
-            },
-            "nullable": true
+          "status_ID": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
       },
-      "CreateQuestionDto": {
+      "AccountReadDto": {
         "type": "object",
         "properties": {
-          "text": {
-            "type": "string",
-            "nullable": true
+          "account_ID": {
+            "type": "integer",
+            "format": "int32"
           },
-          "type": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "CreateStudentDto": {
-        "type": "object",
-        "properties": {
-          "fullName": {
+          "nationalId": {
             "type": "string",
             "nullable": true
           },
@@ -508,157 +1948,64 @@
             "type": "string",
             "nullable": true
           },
-          "gender": {
+          "phone": {
             "type": "string",
             "nullable": true
           },
-          "dateOfBirth": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "phoneNumber": {
+          "fullNameEn": {
             "type": "string",
             "nullable": true
           },
-          "grade": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "ExamResponseDto": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "title": {
+          "fullNameAr": {
             "type": "string",
             "nullable": true
           },
-          "description": {
+          "resetToken": {
             "type": "string",
             "nullable": true
           },
-          "endAt": {
+          "resetTokenExpiry": {
             "type": "string",
             "format": "date-time",
             "nullable": true
           },
-          "grade": {
+          "created_At": {
             "type": "string",
-            "nullable": true
+            "format": "date-time"
           },
-          "subimtted": {
+          "isActive": {
             "type": "boolean"
           },
-          "subject": {
-            "type": "string",
-            "nullable": true
-          },
-          "questions": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/QuestionResponseDto"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "QuestionResponseDto": {
-        "type": "object",
-        "properties": {
-          "id": {
+          "status_ID": {
             "type": "integer",
             "format": "int32"
           },
-          "type": {
+          "statusName": {
             "type": "string",
             "nullable": true
           },
-          "text": {
-            "type": "string",
-            "nullable": true
-          },
-          "optionA": {
-            "type": "string",
-            "nullable": true
-          },
-          "optionB": {
-            "type": "string",
-            "nullable": true
-          },
-          "optionC": {
-            "type": "string",
-            "nullable": true
-          },
-          "optionD": {
-            "type": "string",
-            "nullable": true
-          },
-          "correctOption": {
-            "type": "string",
-            "nullable": true
-          },
-          "correctAnswer": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "QuizUpdateDto": {
-        "type": "object",
-        "properties": {
-          "title": {
-            "type": "string",
-            "nullable": true
-          },
-          "description": {
-            "type": "string",
-            "nullable": true
-          },
-          "endAt": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "grade": {
-            "type": "string",
-            "nullable": true
-          },
-          "subimtted": {
-            "type": "boolean"
-          },
-          "subject": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "StudentAnswerDTO": {
-        "type": "object",
-        "properties": {
-          "questionId": {
+          "role_ID": {
             "type": "integer",
             "format": "int32"
           },
-          "answer": {
+          "roleName": {
             "type": "string",
             "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "StudentUpdateDto": {
+      "AccountUpdateDto": {
+        "required": [
+          "status_ID"
+        ],
         "type": "object",
         "properties": {
-          "fullName": {
+          "nationalId": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
             "type": "string",
             "nullable": true
           },
@@ -666,22 +2013,937 @@
             "type": "string",
             "nullable": true
           },
-          "gender": {
+          "phone": {
             "type": "string",
             "nullable": true
           },
-          "dateOfBirth": {
+          "fullNameEn": {
+            "type": "string",
+            "nullable": true
+          },
+          "fullNameAr": {
+            "type": "string",
+            "nullable": true
+          },
+          "resetToken": {
+            "type": "string",
+            "nullable": true
+          },
+          "resetTokenExpiry": {
             "type": "string",
             "format": "date-time",
             "nullable": true
           },
-          "phoneNumber": {
+          "created_At": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "isActive": {
+            "type": "boolean"
+          },
+          "role_ID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "status_ID": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExamCreateDto": {
+        "required": [
+          "account_ID",
+          "category",
+          "grade",
+          "title"
+        ],
+        "type": "object",
+        "properties": {
+          "title": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "category": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "exam_Description": {
             "type": "string",
             "nullable": true
           },
+          "endDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
           "grade": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "account_ID": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExamReadDto": {
+        "type": "object",
+        "properties": {
+          "exam_ID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "title": {
             "type": "string",
             "nullable": true
+          },
+          "category": {
+            "type": "string",
+            "nullable": true
+          },
+          "exam_Description": {
+            "type": "string",
+            "nullable": true
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "grade": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "account_ID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "teacher": {
+            "$ref": "#/components/schemas/AccountReadDto"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExamUpdateDto": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "category": {
+            "type": "string",
+            "nullable": true
+          },
+          "exam_Description": {
+            "type": "string",
+            "nullable": true
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "grade": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "account_ID": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Exam_QuestionBankCreateDTO": {
+        "required": [
+          "account_ID",
+          "exam_ID",
+          "mark",
+          "question_Bank_ID"
+        ],
+        "type": "object",
+        "properties": {
+          "mark": {
+            "type": "number",
+            "format": "double"
+          },
+          "exam_ID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "question_Bank_ID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "account_ID": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Exam_QuestionBankReadDTO": {
+        "type": "object",
+        "properties": {
+          "exam_QB_ID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "mark": {
+            "type": "number",
+            "format": "double"
+          },
+          "exam_ID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "examTitle": {
+            "type": "string",
+            "nullable": true
+          },
+          "question_Bank_ID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "question": {
+            "type": "string",
+            "nullable": true
+          },
+          "account_ID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "teacherName": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Exam_QuestionBankUpdateDTO": {
+        "type": "object",
+        "properties": {
+          "mark": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "exam_ID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "question_Bank_ID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Fill_In_GapsCreateDTO": {
+        "required": [
+          "correct_Answer",
+          "question_Bank_ID"
+        ],
+        "type": "object",
+        "properties": {
+          "gap_Text": {
+            "type": "string",
+            "nullable": true
+          },
+          "correct_Answer": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "question_Bank_ID": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Fill_In_GapsReadDto": {
+        "type": "object",
+        "properties": {
+          "gap_ID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "gap_Text": {
+            "type": "string",
+            "nullable": true
+          },
+          "correct_Answer": {
+            "type": "string",
+            "nullable": true
+          },
+          "question_Bank_ID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "question": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Fill_In_GapsUpdateDto": {
+        "type": "object",
+        "properties": {
+          "gap_Text": {
+            "type": "string",
+            "nullable": true
+          },
+          "correct_Answer": {
+            "type": "string",
+            "nullable": true
+          },
+          "question_Bank_ID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginCreateDTO": {
+        "required": [
+          "account_ID",
+          "email",
+          "password",
+          "status_ID"
+        ],
+        "type": "object",
+        "properties": {
+          "email": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "password": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "status_ID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "account_ID": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginReadDTO": {
+        "type": "object",
+        "properties": {
+          "login_ID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "status_ID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "statusName": {
+            "type": "string",
+            "nullable": true
+          },
+          "account_ID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "accountFullName": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginUpdateDTO": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "password_Hash": {
+            "type": "string",
+            "nullable": true
+          },
+          "status_ID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "account_ID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MCQ_OptionCreateDTO": {
+        "required": [
+          "option_Text"
+        ],
+        "type": "object",
+        "properties": {
+          "option_Text": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "is_Correct": {
+            "type": "boolean"
+          },
+          "question_Banks": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Question_BankCreateDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MCQ_OptionReadDto": {
+        "type": "object",
+        "properties": {
+          "option_ID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "option_Text": {
+            "type": "string",
+            "nullable": true
+          },
+          "is_Correct": {
+            "type": "boolean"
+          },
+          "question_Banks": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Question_BankReadDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MCQ_OptionsUpdateDto": {
+        "type": "object",
+        "properties": {
+          "option_Text": {
+            "type": "string",
+            "nullable": true
+          },
+          "is_Correct": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "question_Banks": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Question_BankUpdateDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Question_BankCreateDTO": {
+        "required": [
+          "account_ID",
+          "correct_Answer",
+          "mark",
+          "question_Text",
+          "question_Type_ID"
+        ],
+        "type": "object",
+        "properties": {
+          "question_Text": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "mark": {
+            "type": "number",
+            "format": "double"
+          },
+          "correct_Answer": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "account_ID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "question_Type_ID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "option_ID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "fill_In_GapsCreateDTOs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Fill_In_GapsCreateDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Question_BankReadDTO": {
+        "type": "object",
+        "properties": {
+          "question_Bank_ID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "question_Text": {
+            "type": "string",
+            "nullable": true
+          },
+          "mark": {
+            "type": "number",
+            "format": "double"
+          },
+          "correct_Answer": {
+            "type": "string",
+            "nullable": true
+          },
+          "account_ID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "teacherName": {
+            "type": "string",
+            "nullable": true
+          },
+          "question_Type_ID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "questionTypeName": {
+            "type": "string",
+            "nullable": true
+          },
+          "option_ID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "fill_In_Gaps": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Fill_In_GapsReadDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Question_BankUpdateDTO": {
+        "type": "object",
+        "properties": {
+          "question_Text": {
+            "type": "string",
+            "nullable": true
+          },
+          "mark": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "correct_Answer": {
+            "type": "string",
+            "nullable": true
+          },
+          "account_ID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "question_Type_ID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "option_ID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "fill_In_Gaps": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Fill_In_GapsUpdateDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Question_TypeCreateDTO": {
+        "required": [
+          "mark",
+          "questionType_Name"
+        ],
+        "type": "object",
+        "properties": {
+          "questionType_Name": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "question_Description": {
+            "type": "string",
+            "nullable": true
+          },
+          "mark": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Question_TypeReadDto": {
+        "type": "object",
+        "properties": {
+          "question_Type_ID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "questionType_Name": {
+            "type": "string",
+            "nullable": true
+          },
+          "question_Description": {
+            "type": "string",
+            "nullable": true
+          },
+          "mark": {
+            "type": "number",
+            "format": "double"
+          },
+          "question_Banks": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Question_BankReadDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Question_TypeUpdateDto": {
+        "type": "object",
+        "properties": {
+          "questionType_Name": {
+            "type": "string",
+            "nullable": true
+          },
+          "question_Description": {
+            "type": "string",
+            "nullable": true
+          },
+          "mark": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RolesCreateDTO": {
+        "required": [
+          "role_Name"
+        ],
+        "type": "object",
+        "properties": {
+          "role_Name": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "order_Num": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "business_Entity": {
+            "type": "string",
+            "nullable": true
+          },
+          "accounts": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AccountReadDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RolesReadDTO": {
+        "type": "object",
+        "properties": {
+          "role_ID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "role_Name": {
+            "type": "string",
+            "nullable": true
+          },
+          "order_Num": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "business_Entity": {
+            "type": "string",
+            "nullable": true
+          },
+          "accounts": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AccountReadDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RolesUpdateDTO": {
+        "type": "object",
+        "properties": {
+          "role_Name": {
+            "type": "string",
+            "nullable": true
+          },
+          "order_Num": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "business_Entity": {
+            "type": "string",
+            "nullable": true
+          },
+          "accounts": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AccountReadDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "StatusCreateDTO": {
+        "required": [
+          "status_Name"
+        ],
+        "type": "object",
+        "properties": {
+          "status_Name": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "business_Entity": {
+            "type": "string",
+            "nullable": true
+          },
+          "order_Num": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "logins": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LoginReadDTO"
+            },
+            "nullable": true
+          },
+          "accounts": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AccountReadDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "StatusReadDTO": {
+        "type": "object",
+        "properties": {
+          "status_ID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "status_Name": {
+            "type": "string",
+            "nullable": true
+          },
+          "business_Entity": {
+            "type": "string",
+            "nullable": true
+          },
+          "order_Num": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "accountsCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "loginsCount": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "StatusUpdateDTO": {
+        "type": "object",
+        "properties": {
+          "status_Name": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "business_Entity": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "order_Num": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "StudentExamQBCreateDTO": {
+        "required": [
+          "account_ID",
+          "exam_QB_ID",
+          "studentAnswer"
+        ],
+        "type": "object",
+        "properties": {
+          "studentAnswer": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "account_ID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "exam_QB_ID": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "StudentExamQBReadDTO": {
+        "type": "object",
+        "properties": {
+          "student_QB": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "studentAnswer": {
+            "type": "string",
+            "nullable": true
+          },
+          "account_ID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "studentName": {
+            "type": "string",
+            "nullable": true
+          },
+          "exam_QB_ID": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "StudentExamQBUpdateDTO": {
+        "type": "object",
+        "properties": {
+          "studentAnswer": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TrueOrFalseCreateDTO": {
+        "required": [
+          "correct_Ans",
+          "question_Bank_ID"
+        ],
+        "type": "object",
+        "properties": {
+          "question_Bank_ID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "correct_Ans": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TrueOrFalseReadDTO": {
+        "type": "object",
+        "properties": {
+          "question_Bank_ID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "correct_Ans": {
+            "type": "boolean"
+          },
+          "questionText": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TrueOrFalseUpdateDTO": {
+        "required": [
+          "correct_Ans"
+        ],
+        "type": "object",
+        "properties": {
+          "correct_Ans": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false

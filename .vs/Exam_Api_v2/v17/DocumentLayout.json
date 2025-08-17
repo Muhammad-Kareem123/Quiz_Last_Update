@@ -3,95 +3,68 @@
   "WorkspaceRootPath": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\dtos\\createquestiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:dtos\\createquestiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\controllers\\trueorfalsecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:controllers\\trueorfalsecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\dtos\\createtruefalsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:dtos\\createtruefalsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\controllers\\student_examqbcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:controllers\\student_examqbcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\repo\\exam\\questionrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:repo\\exam\\questionrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\controllers\\statuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:controllers\\statuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\repo\\exam\\examrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:repo\\exam\\examrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\controllers\\questiontypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:controllers\\questiontypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/db5/True/SqlTable/dbo.Exams.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\controllers\\questionbankcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:controllers\\questionbankcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\controllers\\mcq_optionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:controllers\\mcq_optionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\models\\exam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:models\\exam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\dtos\\studentupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:dtos\\studentupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\controllers\\fill_in_gapscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:controllers\\fill_in_gapscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\dtos\\createstudentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:dtos\\createstudentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\repo\\student\\istudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:repo\\student\\istudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\repo\\student\\studentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:repo\\student\\studentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\controllers\\exam_questionbankcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:controllers\\exam_questionbankcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\controllers\\examcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:controllers\\examcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\repo\\exam\\iexamrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:repo\\exam\\iexamrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\conventor\\customerconvertor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:conventor\\customerconvertor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\exam_api_v2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:exam_api_v2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\dtos\\createexamdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:dtos\\createexamdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\dtos\\respons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:dtos\\respons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\dtos\\quizupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:dtos\\quizupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|c:\\users\\lenovo\\downloads\\exam_last_update-team7 (1)\\exam_last_update-team7\\data\\appdb_context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{920AAF9A-9C7E-B38E-ABEB-4490127B903B}|Exam_Api_v2.csproj|solutionrelative:data\\appdb_context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -101,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -109,275 +82,194 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CreateTrueFalseDto.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\DTOs\\CreateTrueFalseDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\CreateTrueFalseDto.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\DTOs\\CreateTrueFalseDto.cs",
-              "RelativeToolTip": "DTOs\\CreateTrueFalseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAxAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "TrueOrFalseController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Controllers\\TrueOrFalseController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TrueOrFalseController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Controllers\\TrueOrFalseController.cs",
+              "RelativeToolTip": "Controllers\\TrueOrFalseController.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAmwFAAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-09T15:41:28.42Z",
+              "WhenOpened": "2025-08-17T04:07:28.248Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Student_ExamQBController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Controllers\\Student_ExamQBController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Student_ExamQBController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Controllers\\Student_ExamQBController.cs",
+              "RelativeToolTip": "Controllers\\Student_ExamQBController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-17T04:05:05.114Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "QuestionRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Repo\\Exam\\QuestionRepo.cs",
-              "RelativeDocumentMoniker": "Repo\\Exam\\QuestionRepo.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Repo\\Exam\\QuestionRepo.cs",
-              "RelativeToolTip": "Repo\\Exam\\QuestionRepo.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Title": "StatusController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Controllers\\StatusController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StatusController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Controllers\\StatusController.cs",
+              "RelativeToolTip": "Controllers\\StatusController.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAewEgAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-09T15:41:13.527Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "dbo.Exams.sql",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/db5/True/SqlTable/dbo.Exams.sql",
-              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/db5/True/SqlTable/dbo.Exams.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-08-09T15:37:32.077Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CreateQuestionDto.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\DTOs\\CreateQuestionDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\CreateQuestionDto.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\DTOs\\CreateQuestionDto.cs",
-              "RelativeToolTip": "DTOs\\CreateQuestionDto.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowCAAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-09T15:26:59.201Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Question.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Models\\Question.cs",
-              "RelativeDocumentMoniker": "Models\\Question.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Models\\Question.cs",
-              "RelativeToolTip": "Models\\Question.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAiwBsAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-09T14:30:57.804Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Exam.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Models\\Exam.cs",
-              "RelativeDocumentMoniker": "Models\\Exam.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Models\\Exam.cs",
-              "RelativeToolTip": "Models\\Exam.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-09T13:31:26.524Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ExamRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Repo\\Exam\\ExamRepo.cs",
-              "RelativeDocumentMoniker": "Repo\\Exam\\ExamRepo.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Repo\\Exam\\ExamRepo.cs",
-              "RelativeToolTip": "Repo\\Exam\\ExamRepo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T13:37:45.451Z"
+              "WhenOpened": "2025-08-17T03:51:26.855Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "QuestionController.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Controllers\\QuestionController.cs",
-              "RelativeDocumentMoniker": "Controllers\\QuestionController.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Controllers\\QuestionController.cs",
-              "RelativeToolTip": "Controllers\\QuestionController.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Title": "RolesController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Controllers\\RolesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RolesController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Controllers\\RolesController.cs",
+              "RelativeToolTip": "Controllers\\RolesController.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAIwEsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T13:36:52.894Z"
+              "WhenOpened": "2025-08-17T03:49:01.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "QuestionTypeController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Controllers\\QuestionTypeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\QuestionTypeController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Controllers\\QuestionTypeController.cs",
+              "RelativeToolTip": "Controllers\\QuestionTypeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-17T03:45:46.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "QuestionBankController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Controllers\\QuestionBankController.cs",
+              "RelativeDocumentMoniker": "Controllers\\QuestionBankController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Controllers\\QuestionBankController.cs",
+              "RelativeToolTip": "Controllers\\QuestionBankController.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAkwE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-17T03:41:26.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MCQ_OptionsController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Controllers\\MCQ_OptionsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MCQ_OptionsController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Controllers\\MCQ_OptionsController.cs",
+              "RelativeToolTip": "Controllers\\MCQ_OptionsController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAMwCgAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-17T03:37:55.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-17T03:35:11.91Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "StudentUpdateDto.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\DTOs\\StudentUpdateDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\StudentUpdateDto.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\DTOs\\StudentUpdateDto.cs",
-              "RelativeToolTip": "DTOs\\StudentUpdateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Title": "Fill_In_GapsController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Controllers\\Fill_In_GapsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Fill_In_GapsController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Controllers\\Fill_In_GapsController.cs",
+              "RelativeToolTip": "Controllers\\Fill_In_GapsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-09T14:22:57.278Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IStudent.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Repo\\Student\\IStudent.cs",
-              "RelativeDocumentMoniker": "Repo\\Student\\IStudent.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Repo\\Student\\IStudent.cs",
-              "RelativeToolTip": "Repo\\Student\\IStudent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-09T14:20:41.912Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "StudentRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Repo\\Student\\StudentRepo.cs",
-              "RelativeDocumentMoniker": "Repo\\Student\\StudentRepo.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Repo\\Student\\StudentRepo.cs",
-              "RelativeToolTip": "Repo\\Student\\StudentRepo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-09T14:23:20.968Z"
+              "WhenOpened": "2025-08-17T03:32:10.537Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "CreateStudentDto.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\DTOs\\CreateStudentDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\CreateStudentDto.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\DTOs\\CreateStudentDto.cs",
-              "RelativeToolTip": "DTOs\\CreateStudentDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Title": "Exam_QuestionBankController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Controllers\\Exam_QuestionBankController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Exam_QuestionBankController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Controllers\\Exam_QuestionBankController.cs",
+              "RelativeToolTip": "Controllers\\Exam_QuestionBankController.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAkwEoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-09T14:21:23.575Z"
+              "WhenOpened": "2025-08-17T03:27:38.082Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "StudentController.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Controllers\\StudentController.cs",
-              "RelativeDocumentMoniker": "Controllers\\StudentController.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Controllers\\StudentController.cs",
-              "RelativeToolTip": "Controllers\\StudentController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-09T14:23:52.877Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 10,
               "Title": "ExamController.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Controllers\\ExamController.cs",
               "RelativeDocumentMoniker": "Controllers\\ExamController.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Controllers\\ExamController.cs",
               "RelativeToolTip": "Controllers\\ExamController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwD4AAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T13:36:47.532Z"
+              "WhenOpened": "2025-08-17T03:22:34.068Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "CustomerConvertor.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Conventor\\CustomerConvertor.cs",
-              "RelativeDocumentMoniker": "Conventor\\CustomerConvertor.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Conventor\\CustomerConvertor.cs",
-              "RelativeToolTip": "Conventor\\CustomerConvertor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAvAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwBEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-09T13:36:09.702Z"
+              "WhenOpened": "2025-08-17T03:17:26.664Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "IExamRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Repo\\Exam\\IExamRepo.cs",
-              "RelativeDocumentMoniker": "Repo\\Exam\\IExamRepo.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Repo\\Exam\\IExamRepo.cs",
-              "RelativeToolTip": "Repo\\Exam\\IExamRepo.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAzwAsAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-09T14:16:54.812Z"
+              "DocumentIndex": 12,
+              "Title": "Exam_Api_v2.csproj",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Exam_Api_v2.csproj",
+              "RelativeDocumentMoniker": "Exam_Api_v2.csproj",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Exam_Api_v2.csproj",
+              "RelativeToolTip": "Exam_Api_v2.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-17T03:14:54.407Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-09T13:35:15.153Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "CreateExamDto.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\DTOs\\CreateExamDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\CreateExamDto.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\DTOs\\CreateExamDto.cs",
-              "RelativeToolTip": "DTOs\\CreateExamDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-09T13:32:46.295Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Respons.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\DTOs\\Respons.cs",
-              "RelativeDocumentMoniker": "DTOs\\Respons.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\DTOs\\Respons.cs",
-              "RelativeToolTip": "DTOs\\Respons.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-09T13:33:32.928Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "QuizUpdateDto.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\DTOs\\QuizUpdateDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\QuizUpdateDto.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\DTOs\\QuizUpdateDto.cs",
-              "RelativeToolTip": "DTOs\\QuizUpdateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-09T13:33:24.969Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Models\\Student.cs",
-              "RelativeDocumentMoniker": "Models\\Student.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Models\\Student.cs",
-              "RelativeToolTip": "Models\\Student.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-09T13:32:17.27Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 13,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAB1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-09T13:27:36.829Z"
+              "WhenOpened": "2025-08-17T03:11:48.957Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 15,
+              "Title": "AppDB_Context.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Data\\AppDB_Context.cs",
+              "RelativeDocumentMoniker": "Data\\AppDB_Context.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\Data\\AppDB_Context.cs",
+              "RelativeToolTip": "Data\\AppDB_Context.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-17T03:11:09.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Users\\Lenovo\\Downloads\\EXAM_LAST_UPDATE-TEAM7 (1)\\EXAM_LAST_UPDATE-TEAM7\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAACIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-08-09T13:25:29.681Z"
             }
